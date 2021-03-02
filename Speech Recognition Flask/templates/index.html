@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Speech REC</title>
+</head>
+<body>
+<div id="speechContainer">
+    <h1>Upload File</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file"/>
+        <br>
+        <input type="submit" name="Submit"/>
+    </form>
+    {%if transcript != "" %}
+    <div id="speechTranscriptContainer">
+        <h1>Transcript</h1>
+        <p>{{transcript}}</p>
+    </div>
+    {% endif %}
+</div>
+</body>
+</html>
